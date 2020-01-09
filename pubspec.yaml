@@ -1,0 +1,31 @@
+name: mobx_exemple
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  mobx: ^0.4.0+1
+  flutter_mobx: ^0.3.6
+
+dev_dependencies:
+  mobx_codegen:
+  build_runner:
+
+
+  flutter_test:
+    sdk: flutter
+
+
+
+flutter:
+
+
+  uses-material-design: true
+
