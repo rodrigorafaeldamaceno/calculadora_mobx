@@ -18,7 +18,7 @@ class ResultadoScreen extends StatelessWidget {
                 calculadora.multiplicar(calculadora.resultado, 2);
               },
               child: Text(
-                '${calculadora.resultado}',
+                '${calculadora.resultado.toStringAsPrecision(3)}',
                 style: TextStyle(fontSize: 50),
               ),
             );

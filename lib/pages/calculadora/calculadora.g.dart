@@ -30,7 +30,7 @@ mixin _$Calculadora on _CalculadoraBase, Store {
       ActionController(name: '_CalculadoraBase');
 
   @override
-  dynamic somar(double n1, double n2) {
+  double somar(double n1, double n2) {
     final _$actionInfo = _$_CalculadoraBaseActionController.startAction();
     try {
       return super.somar(n1, n2);
@@ -40,7 +40,7 @@ mixin _$Calculadora on _CalculadoraBase, Store {
   }
 
   @override
-  dynamic subtrair(double n1, double n2) {
+  double subtrair(double n1, double n2) {
     final _$actionInfo = _$_CalculadoraBaseActionController.startAction();
     try {
       return super.subtrair(n1, n2);
@@ -50,7 +50,7 @@ mixin _$Calculadora on _CalculadoraBase, Store {
   }
 
   @override
-  dynamic dividir(double n1, double n2) {
+  double dividir(double n1, double n2) {
     final _$actionInfo = _$_CalculadoraBaseActionController.startAction();
     try {
       return super.dividir(n1, n2);
@@ -60,7 +60,7 @@ mixin _$Calculadora on _CalculadoraBase, Store {
   }
 
   @override
-  dynamic multiplicar(double n1, double n2) {
+  double multiplicar(double n1, double n2) {
     final _$actionInfo = _$_CalculadoraBaseActionController.startAction();
     try {
       return super.multiplicar(n1, n2);

@@ -8,11 +8,11 @@ abstract class _CalculadoraBase with Store {
   double resultado = 0;
 
   @action
-  somar(double n1, double n2) => resultado = n1 + n2;
+  double somar(double n1, double n2) => resultado = n1 + n2;
   @action
-  subtrair(double n1, double n2) => resultado = n1 - n2;
+  double subtrair(double n1, double n2) => resultado = n1 - n2;
   @action
-  dividir(double n1, double n2) => resultado = n1 / n2;
+  double dividir(double n1, double n2) => resultado = n1 / n2;
   @action
-  multiplicar(double n1, double n2) => resultado = n1 * n2;
+  double multiplicar(double n1, double n2) => resultado = n1 * n2;
 }

@@ -10,9 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        Provider<Calculadora>(
-          create: (_) => Calculadora(),
-        )
+        Provider<Calculadora>(create: (_) => Calculadora()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

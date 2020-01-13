@@ -4,12 +4,7 @@ import 'package:mobx_exemple/pages/calculadora/calculadora.dart';
 import 'package:mobx_exemple/pages/calculadora/resultado_screen.dart';
 import 'package:provider/provider.dart';
 
-class CalculadoraScreen extends StatefulWidget {
-  @override
-  _CalculadoraScreenState createState() => _CalculadoraScreenState();
-}
-
-class _CalculadoraScreenState extends State<CalculadoraScreen> {
+class CalculadoraScreen extends StatelessWidget {
   final _formKey = GlobalKey<FormState>();
   TextEditingController n1Controller = TextEditingController();
   TextEditingController n2Controller = TextEditingController();
@@ -34,7 +29,7 @@ class _CalculadoraScreenState extends State<CalculadoraScreen> {
                 SizedBox(height: 10),
                 _buildTextField(label: 'N1', controller: n1Controller),
                 _buildTextField(label: 'N2', controller: n2Controller),
-                Row(
+                Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     RaisedButton(
@@ -86,7 +81,7 @@ class _CalculadoraScreenState extends State<CalculadoraScreen> {
                         );
                       },
                       child: Text(
-                        'Resultado: ${calculadora.resultado.toStringAsFixed(3)}',
+                        'Resultado: ${calculadora.resultado.toStringAsPrecision(3)}',
                         style: TextStyle(fontSize: 30),
                       ),
                     );
